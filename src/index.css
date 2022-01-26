@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding:0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,87 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navMain{
+  /* width: 100%; */
+  height: 100%;
+  margin: 0;
+  top:0px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.nav1{
+  background-color: #19242f;
+  color:honeydew;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 44;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+.nav{
+  width: 100%;
+  line-height: 4rem;
+  background-color: #19242f;
+  position: sticky;
+  align-items:center;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0px;
+  z-index: 44;
+}
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  margin: 0;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.nav li{
+  text-decoration: none;
+  color:grey
+}
+.nav li:hover{
+  color: white;
+}
+#hiddenDisplay{
+  display: none;
+  
+}
+
+.calltext{
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5rem; */
+  margin-top: 5vh;
+  align-self: flex-start;
+  letter-spacing: 1px;
+  font-weight: 550;
+  font-size: smaller;
+}
+
+.active{
+  color:#f63989;
+  text-decoration: none;
+}
+.inActive{
+  color:white;
+  text-decoration: none;
+}
+
+
+/*Footer*/
+.contact{
+  display:flex; height:5vh; width:100%;  justify-content:space-evenly; 
+}
+.contact a{
+  color:grey
+}
+.contact a:hover{
+  color:white
 }
